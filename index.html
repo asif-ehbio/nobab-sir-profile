@@ -1,55 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nobab Sir | Secure Technology Expert</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nobab Sir | Official Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --primary: #00ffcc; --bg: #050505; --card: #111; --text: #e0e0e0; }
-        body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Segoe UI', Tahoma, sans-serif; line-height: 1.6; }
-        
-        /* 🚀 Hero Section */
-        header { text-align: center; padding: 60px 20px; background: linear-gradient(180deg, #001a14 0%, var(--bg) 100%); border-bottom: 1px solid #222; }
-        .activation-tag { color: var(--primary); font-weight: 800; letter-spacing: 3px; font-size: 14px; margin-bottom: 10px; display: block; }
-        header h1 { font-size: 32px; margin: 10px 0; color: #fff; text-transform: uppercase; }
-        .subtitle { font-size: 14px; opacity: 0.7; letter-spacing: 1px; }
+        :root { --primary: #00ffcc; --bg: #0d0f12; --card-bg: #161b22; --text: #c9d1d9; }
+        body { margin: 0; background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; }
+
+        /* 🚀 Header */
+        header { text-align: center; padding: 50px 20px; background: radial-gradient(circle at top, #004d40 0%, var(--bg) 70%); border-bottom: 1px solid #30363d; }
+        .activation-badge { color: var(--primary); font-size: 13px; font-weight: 800; letter-spacing: 2px; display: block; margin-bottom: 10px; }
+        header h1 { font-size: 34px; color: #fff; margin: 10px 0; letter-spacing: 1px; }
+        .subtitle { font-size: 14px; opacity: 0.8; letter-spacing: 1px; }
 
         .container { padding: 20px; max-width: 600px; margin: 0 auto; }
-        
-        .section-box { background: var(--card); border-radius: 15px; padding: 20px; margin-bottom: 25px; border: 1px solid #222; position: relative; overflow: hidden; }
-        .section-box::before { content: ""; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--primary); }
-        
-        h3 { color: var(--primary); font-size: 16px; text-transform: uppercase; margin-top: 0; display: flex; align-items: center; gap: 10px; }
-        
-        .list-item { font-size: 14px; margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px; color: #bbb; }
-        .list-item i { color: var(--primary); margin-top: 4px; font-size: 12px; }
 
-        /* 📱 Select Service Dropdown */
-        .service-select { width: 100%; padding: 15px; background: #000; border: 2px solid var(--primary); color: #fff; border-radius: 10px; font-size: 16px; margin-top: 10px; outline: none; }
-        .order-btn { width: 100%; padding: 15px; background: var(--primary); color: #000; border: none; border-radius: 10px; font-weight: 800; font-size: 16px; margin-top: 15px; cursor: pointer; text-transform: uppercase; }
+        /* 📦 Box Styles */
+        .section-box { background: var(--card-bg); border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid #30363d; position: relative; overflow: hidden; }
+        .section-box::before { content: ""; position: absolute; left: 0; top: 0; width: 4px; height: 100%; background: var(--primary); }
+        .section-box h3 { color: var(--primary); font-size: 15px; margin-top: 0; text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+        .list-item { font-size: 14px; margin-bottom: 12px; display: flex; align-items: flex-start; gap: 12px; color: #8b949e; }
+        .list-item i { color: var(--primary); font-size: 10px; margin-top: 5px; }
 
-        /* 💳 Payment & Availability */
-        .flex-box { display: flex; justify-content: space-between; align-items: center; background: rgba(0,255,204,0.05); padding: 15px; border-radius: 10px; margin-top: 10px; border: 1px solid #1a332d; }
-        .contact-link { color: var(--primary); text-decoration: none; font-weight: 600; }
+        /* 💠 Service Grid */
+        .service-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 10px; }
+        .service-card { background: #1f6feb; border-radius: 15px; padding: 20px; text-align: center; color: #fff; position: relative; cursor: pointer; transition: 0.3s; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(31, 111, 235, 0.3); }
+        .service-card i { font-size: 30px; margin-bottom: 10px; }
+        .service-card b { display: block; font-size: 14px; margin-bottom: 5px; }
+        .service-card span { font-size: 11px; opacity: 0.8; }
 
-        footer { text-align: center; padding: 40px 20px; font-size: 12px; opacity: 0.5; }
+        /* 📞 Contact Buttons */
+        .contact-btn { display: flex; align-items: center; gap: 20px; background: #fff; color: #000; padding: 15px 25px; border-radius: 15px; text-decoration: none; margin-bottom: 15px; font-weight: 700; transition: 0.3s; }
+        .contact-btn:hover { background: var(--primary); color: #000; }
+        .contact-btn i { font-size: 24px; width: 30px; text-align: center; }
+        .contact-btn .btn-text { display: flex; flex-direction: column; }
+        .contact-btn small { font-weight: 400; font-size: 12px; opacity: 0.6; }
+
+        /* 💳 Payment Section */
+        .payment-box { text-align: center; border-top: 1px solid #30363d; padding-top: 30px; margin-top: 30px; }
+        .pay-info { background: rgba(0,255,204,0.05); padding: 15px; border-radius: 10px; border: 1px solid #1a332d; display: flex; justify-content: space-between; margin-top: 15px; }
+
+        footer { text-align: center; padding: 40px 20px; font-size: 12px; opacity: 0.6; border-top: 1px solid #30363d; margin-top: 40px; }
     </style>
 </head>
 <body>
 
     <header>
-        <span class="activation-tag">🚀 PROFILE ACTIVATED</span>
+        <span class="activation-badge">🚀 PROFILE ACTIVATED</span>
         <h1>NOBAB SIR</h1>
         <div class="subtitle">Secure Technology Experts</div>
     </header>
 
     <div class="container">
-        <div class="section-box">
-            <h3><i class="fas fa-user-shield"></i> Personal Identity</h3>
-            <div style="color: #ff3b30; font-weight: bold;">No Need ❌</div>
-        </div>
-
         <div class="section-box">
             <h3><i class="fas fa-code"></i> Tech Stack & Work</h3>
             <div class="list-item"><i class="fas fa-check"></i> Web & App Developer / Designer</div>
@@ -59,62 +64,62 @@
             <h3><i class="fas fa-tools"></i> Recovery Services</h3>
             <div class="list-item"><i class="fas fa-circle"></i> Account Recovery Service</div>
             <div class="list-item"><i class="fas fa-circle"></i> Account Access Recovery</div>
-            <div class="list-item"><i class="fas fa-circle"></i> Social Media Account Recovery</div>
-            <div class="list-item"><i class="fas fa-circle"></i> Digital Account Recovery Solutions</div>
             <div class="list-item"><i class="fas fa-circle"></i> Online Account Access Restoration</div>
-            <div class="list-item"><i class="fas fa-circle"></i> Account Unlock & Recovery Service</div>
+            <div class="list-item"><i class="fas fa-circle"></i> Account Unlock & Security Assistance</div>
         </div>
 
-        <div class="section-box" style="border-color: #ff3b30;">
-            <h3 style="color: #ff3b30;"><i class="fas fa-fire"></i> Expert Security & Removal</h3>
-            <div class="list-item"><i class="fas fa-skull-crossbones"></i> Harassment & Fake Account Removal</div>
-            <div class="list-item"><i class="fas fa-shield-alt"></i> FB / Gmail / WA / IMO / TikTok Recovery</div>
+        <div class="section-title" style="margin: 30px 0 15px; font-weight: 700; color: var(--primary);">💠 OUR SERVICES</div>
+        <div class="service-grid">
+            <div class="service-card" onclick="sendOrder('Facebook')"><i class="fab fa-facebook"></i><b>Facebook Ha*ck</b><span>Social Media</span></div>
+            <div class="service-card" style="background: #28a745;" onclick="sendOrder('WhatsApp')"><i class="fab fa-whatsapp"></i><b>WhatsApp Ha*ck</b><span>Social Media</span></div>
+            <div class="service-card" style="background: #00acee;" onclick="sendOrder('IMO')"><i class="fas fa-comment"></i><b>IMO Ha*ck</b><span>Social Media</span></div>
+            <div class="service-card" style="background: #ea4335;" onclick="sendOrder('Gmail')"><i class="fab fa-google"></i><b>Gmail Ha*ck</b><span>Google</span></div>
         </div>
 
-        <div class="section-box">
-            <h3><i class="fas fa-clock"></i> Availability</h3>
-            <div class="list-item"><i class="fas fa-bolt"></i> Active: 07:00 AM – 03:00 AM</div>
-            <div class="list-item"><i class="fas fa-globe"></i> Status: 20 Hours Online</div>
-            <div class="list-item"><i class="fas fa-mosque"></i> Namaz Break: Every Waqt 🕋</div>
-        </div>
+        <div class="section-title" style="margin: 40px 0 20px; font-weight: 700; color: #fff;">📞 CONTACT SUPPORT</div>
+        
+        <a href="https://m.me/nobabsir" class="contact-btn">
+            <i class="fab fa-facebook-messenger" style="color: #0084ff;"></i>
+            <div class="btn-text">Messenger <small>Chat with our team</small></div>
+        </a>
 
-        <div class="section-box" id="order">
-            <h3><i class="fas fa-shopping-cart"></i> Select Service</h3>
-            <select id="service-choice" class="service-select">
-                <option value="Facebook Recovery">Facebook Recovery</option>
-                <option value="Gmail Recovery">Gmail Recovery</option>
-                <option value="Imo Recovery">Imo Recovery</option>
-                <option value="WhatsApp Recovery">WhatsApp Recovery</option>
-                <option value="Instagram Recovery">Instagram Recovery</option>
-                <option value="TikTok Recovery">TikTok Recovery</option>
-            </select>
-            <button class="order-btn" onclick="sendOrder()">Order on WhatsApp</button>
-            
-            <div style="margin-top: 20px;">
-                <div class="list-item"><i class="fas fa-envelope"></i> secure.technology.solutions.bd@gmail.com</div>
-                <div class="list-item"><i class="fas fa-link"></i> nobabsir.com</div>
-            </div>
-        </div>
+        <a href="https://wa.me/8801751416755" class="contact-btn">
+            <i class="fab fa-whatsapp" style="color: #25d366;"></i>
+            <div class="btn-text">WhatsApp <small>Talk to us live</small></div>
+        </a>
 
-        <div class="section-box">
+        <a href="https://t.me/nobabsir" class="contact-btn">
+            <i class="fab fa-telegram-plane" style="color: #0088cc;"></i>
+            <div class="btn-text">Telegram <small>Join our community</small></div>
+        </a>
+
+        <a href="mailto:secure.technology.solutions.bd@gmail.com" class="contact-btn">
+            <i class="fas fa-envelope" style="color: #ea4335;"></i>
+            <div class="btn-text">Email <small>Mail us for inquiries</small></div>
+        </a>
+
+        <div class="payment-box">
             <h3><i class="fas fa-credit-card"></i> Payment & Legal</h3>
-            <div class="flex-box">
+            <p style="font-size: 13px; opacity: 0.7;">Official Transaction Details</p>
+            <div class="pay-info">
                 <span>BKash + Nagad</span>
-                <span style="color: #fff; font-weight: bold;">01839876372</span>
+                <span style="color: #fff; font-weight: 800;">01839876372</span>
+            </div>
+            <div style="margin-top: 15px; opacity: 0.5; font-size: 20px; letter-spacing: 10px;">
+                <i class="fab fa-cc-visa"></i> <i class="fab fa-cc-mastercard"></i> <i class="fas fa-university"></i>
             </div>
         </div>
     </div>
 
     <footer>
-        &copy; 2026 Nobab Sir | Powered by EHB Technology
+        Copyright © 2026 by Nobab Sir. All Rights Reserved.
     </footer>
 
     <script>
-        function sendOrder() {
-            const service = document.getElementById('service-choice').value;
+        function sendOrder(service) {
             const phone = "8801751416755";
-            const message = `Hello Nobab Sir,\nI want to order: ${service}\nPlease guide me about the process.`;
-            window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
+            const msg = `আসসালামু আলাইকুম নোবাব স্যার,\nআমি আপনার ${service} সার্ভিসটি নিতে চাই। দয়া করে প্রসেসটি জানান।`;
+            window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
         }
     </script>
 </body>

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Nobab Sir | Ultimate Secure Profile</title>
+    <title>Nobab Sir | Pure Bangla Secure Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Hind+Siliguri:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         :root { --primary: #00ffcc; --bg: #05070a; --card: #12151c; --text: #d1d5db; --font-bn: 'Hind Siliguri', sans-serif; --font-en: 'Orbitron', sans-serif; }
-        body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-bn); padding-bottom: 100px; overflow-x: hidden; }
+        body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-bn); padding-bottom: 100px; }
 
         /* 📢 Top Greeting Banner */
         .top-banner { background: #fff; color: #000; padding: 15px; margin: 15px; border-radius: 15px; display: flex; align-items: center; gap: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
@@ -19,8 +19,7 @@
         /* 🚀 Hero Section */
         header { text-align: center; padding: 50px 20px; background: radial-gradient(circle at top, #002b24 0%, var(--bg) 90%); border-bottom: 1px solid #1f2937; }
         .badge { color: var(--primary); font-family: var(--font-en); font-size: 11px; font-weight: 700; letter-spacing: 3px; display: block; margin-bottom: 10px; }
-        header h1 { font-family: var(--font-en); font-size: 32px; color: #fff; margin: 5px 0; letter-spacing: 2px; text-shadow: 0 0 10px var(--primary); }
-        .subtitle { font-size: 14px; color: var(--primary); font-weight: 500; letter-spacing: 1px; }
+        header h1 { font-family: var(--font-en); font-size: 32px; color: #fff; margin: 5px 0; letter-spacing: 2px; }
 
         .container { padding: 15px; max-width: 600px; margin: 0 auto; }
 
@@ -33,18 +32,19 @@
         /* 💠 Recovery Service Grid */
         .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 25px 0; }
         .service-card { background: var(--card); border: 1px solid #30363d; border-radius: 15px; padding: 18px 5px; text-align: center; cursor: pointer; transition: 0.3s; }
-        .service-card:active { transform: scale(0.95); background: #1c2128; border-color: var(--primary); }
         .service-card i { font-size: 30px; margin-bottom: 12px; display: block; }
-        .service-card b { font-size: 10px; color: #fff; display: block; text-transform: uppercase; line-height: 1.4; letter-spacing: 0.5px; }
+        .service-card b { font-size: 10px; color: #fff; display: block; text-transform: uppercase; line-height: 1.4; }
 
-        /* 🕒 Contact & Payment Sections */
-        .contact-btn { display: flex; align-items: center; gap: 15px; background: #fff; color: #000; padding: 14px 22px; border-radius: 12px; text-decoration: none; margin-bottom: 12px; font-weight: 800; font-size: 15px; transition: 0.3s; }
+        /* 📞 Contact Support Cards */
+        .contact-card { display: flex; align-items: center; gap: 15px; background: #fff; color: #333; padding: 15px 20px; border-radius: 15px; text-decoration: none; margin-bottom: 12px; border: 1px solid #eee; transition: 0.3s; }
+        .contact-card:active { transform: scale(0.98); background: #f9f9f9; }
+        .contact-card i { font-size: 28px; width: 35px; text-align: center; }
+        .contact-text b { display: block; font-size: 16px; color: #111; }
+        .contact-text span { font-size: 12px; opacity: 0.7; }
+
+        /* 💳 Payment Section */
         .payment-card { background: linear-gradient(135deg, rgba(0, 255, 204, 0.1) 0%, rgba(0, 0, 0, 0) 100%); border: 1px dashed var(--primary); padding: 20px; border-radius: 15px; text-align: center; margin-top: 10px; }
-        .pay-num { font-size: 22px; font-weight: 800; color: #fff; margin-top: 8px; display: block; font-family: var(--font-en); letter-spacing: 1px; }
-
-        /* 📝 Footer Styling */
-        .footer-note { background: #111; border: 1px solid #222; padding: 20px; border-radius: 15px; margin-top: 35px; font-size: 13px; color: #9ca3af; text-align: center; line-height: 1.8; }
-        .footer-note b { color: var(--primary); }
+        .pay-num { font-size: 22px; font-weight: 800; color: #fff; margin-top: 8px; display: block; font-family: var(--font-en); }
     </style>
 </head>
 <body>
@@ -71,17 +71,37 @@
             <div class="list-item"><i class="fas fa-check-circle"></i> টিকটক পুনরুদ্ধার - ইন্সটাগ্রাম পুনরুদ্ধার</div>
         </div>
 
-        <div style="font-weight: 700; margin: 30px 0 15px; padding-left: 5px; font-size: 15px; display: flex; align-items: center; gap: 8px;">
-            <i class="fas fa-map-pin" style="color: #ff3b30;"></i> সার্ভিস নির্বাচন করুন
-        </div>
+        <div style="font-weight: 700; margin: 30px 0 15px; padding-left: 5px; font-size: 15px;">📌 সার্ভিস নির্বাচন করুন</div>
         <div class="service-grid">
-            <div class="service-card" onclick="order('Facebook')"><i class="fab fa-facebook" style="color:#1877f2;"></i><b>Facebook<br>Recovery</b></div>
-            <div class="service-card" onclick="order('Gmail')"><i class="fab fa-google" style="color:#ea4335;"></i><b>Gmail<br>Recovery</b></div>
-            <div class="service-card" onclick="order('IMO')"><i class="fas fa-comment-dots" style="color:#2196f3;"></i><b>IMO<br>Recovery</b></div>
-            <div class="service-card" onclick="order('WhatsApp')"><i class="fab fa-whatsapp" style="color:#25d366;"></i><b>WhatsApp<br>Recovery</b></div>
-            <div class="service-card" onclick="order('Instagram')"><i class="fab fa-instagram" style="color:#e4405f;"></i><b>Instagram<br>Recovery</b></div>
-            <div class="service-card" onclick="order('TikTok')"><i class="fab fa-tiktok" style="color:#fff;"></i><b>TikTok<br>Recovery</b></div>
+            <div class="service-card" onclick="order('ফেসবুক')"><i class="fab fa-facebook" style="color:#1877f2;"></i><b>Facebook<br>Recovery</b></div>
+            <div class="service-card" onclick="order('জিমেইল')"><i class="fab fa-google" style="color:#ea4335;"></i><b>Gmail<br>Recovery</b></div>
+            <div class="service-card" onclick="order('ইমু')"><i class="fas fa-comment-dots" style="color:#2196f3;"></i><b>IMO<br>Recovery</b></div>
+            <div class="service-card" onclick="order('হোয়াটসঅ্যাপ')"><i class="fab fa-whatsapp" style="color:#25d366;"></i><b>WhatsApp<br>Recovery</b></div>
+            <div class="service-card" onclick="order('ইন্সটাগ্রাম')"><i class="fab fa-instagram" style="color:#e4405f;"></i><b>Instagram<br>Recovery</b></div>
+            <div class="service-card" onclick="order('টিকটক')"><i class="fab fa-tiktok" style="color:#fff;"></i><b>TikTok<br>Recovery</b></div>
         </div>
+
+        <div style="font-weight: 700; margin: 40px 0 15px; text-align: center; font-size: 18px; color: #fff;">Contact Support</div>
+        
+        <a href="https://m.me/186189464570441" class="contact-card">
+            <i class="fab fa-facebook-messenger" style="color:#0084ff;"></i>
+            <div class="contact-text"><b>Messenger</b><span>Chat with our team</span></div>
+        </a>
+
+        <a href="https://wa.me/8801751416755" class="contact-card">
+            <i class="fab fa-whatsapp" style="color:#25d366;"></i>
+            <div class="contact-text"><b>WhatsApp</b><span>Talk to us live</span></div>
+        </a>
+
+        <a href="https://wa.me/8801751416755" class="contact-card">
+            <i class="fab fa-telegram" style="color:#0088cc;"></i>
+            <div class="contact-text"><b>Telegram</b><span>Join our community</span></div>
+        </a>
+
+        <a href="mailto:secure.technology.solutions.bd@gmail.com" class="contact-card">
+            <i class="fas fa-envelope" style="color:#ea4335;"></i>
+            <div class="contact-text"><b>Email</b><span>Mail us</span></div>
+        </a>
 
         <div class="section-box">
             <h3>🔐 আমাদের সকল সার্ভিস :</h3>
@@ -103,43 +123,28 @@
             <div class="list-item"><i class="fas fa-shield-alt"></i> ইমো অ্যাকাউন্ট অ্যাক্সেস ও রিকভারি</div>
         </div>
 
-        <div class="section-box">
-            <h3>🕒 আমাদের সার্ভিস সময়সূচি</h3>
-            <div class="list-item"><i class="fas fa-clock"></i> ⏰ Active Time: ৭:০০ AM – ৩:০০ AM</div>
-            <div class="list-item"><i class="fas fa-bolt"></i> ⚡ Online: প্রতিদিন প্রায় ২০ ঘণ্টা</div>
-            <div class="list-item"><i class="fas fa-pray"></i> 🕌 Namaz Break: প্রত্যেক ওয়াক্তে বিরতি</div>
-        </div>
-
-        <div class="section-box">
-            <h3>📞 যোগাযোগ করুন</h3>
-            <a href="https://wa.me/8801751416755" class="contact-btn"><i class="fab fa-whatsapp" style="color:#25d366; font-size:22px;"></i> WhatsApp Support</a>
-            <div class="list-item"><i class="fas fa-globe"></i> 🌐 nobabsir.com</div>
-            <div class="list-item"><i class="fas fa-envelope"></i> 📧 secure.technology.solutions.bd@gmail.com</div>
-        </div>
-
         <div class="payment-card">
             <h3 style="color:var(--primary); font-size:15px; margin-bottom:12px;"><i class="fas fa-wallet"></i> পেমেন্ট সিস্টেম</h3>
             <span style="font-size:12px; opacity:0.8;">📲 BKash / Nagad (Personal)</span>
             <span class="pay-num">01839876372</span>
         </div>
 
-        <div class="footer-note">
+        <div class="footer-note" style="background:#111; border:1px solid #222; padding:20px; border-radius:15px; margin-top:35px; font-size:13px; color:#9ca3af; text-align:center;">
             ⭐ <b>Secure Technology Experts</b><br>
-            ✔️ Professional Support | ✔️ Trusted Digital Service<br>
-            ✔️ Fast & Secure Solutions<br>
-            <i style="font-size: 11px; margin-top: 10px; display: block; opacity: 0.6;">আমাদের সাথে আপনার ডিজিটাল যাত্রা হোক নিরাপদ ও নিরবচ্ছিন্ন।</i>
+            ✔️ প্রফেশনাল সাপোর্ট | ✔️ বিশ্বস্ত ডিজিটাল সার্ভিস<br>
+            ✔️ দ্রুত এবং নিরাপদ সমাধান
         </div>
     </div>
 
-    <footer style="text-align:center; padding:30px; font-size:11px; opacity:0.4; font-family: var(--font-en);">
+    <footer style="text-align:center; padding:30px; font-size:11px; opacity:0.4;">
         &copy; 2026 NOBAB SIR | ALL RIGHTS RESERVED
     </footer>
 
     <script>
         function order(service) {
             const phone = "8801751416755";
-            // 📝 Updated WhatsApp Format
-            const msg = `Assalamualaikum,\nAmi ${service} Recovery Service Ti Nite Chay। দয়া করে প্রসেসটি জানান।`;
+            // 📝 Full Bangla Format
+            const msg = `আসসালামু আলাইকুম,\nআমি আপনার ${service} রিকভারি সার্ভিসটি নিতে চাই। দয়া করে প্রসেসটি জানান।`;
             window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
         }
     </script>

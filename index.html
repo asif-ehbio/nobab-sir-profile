@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Nobab Sir | Pure Bangla Secure Profile</title>
+    <title>Nobab Sir | Ultimate Secure Profile v3.5</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Hind+Siliguri:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         :root { --primary: #00ffcc; --bg: #05070a; --card: #12151c; --text: #d1d5db; --font-bn: 'Hind Siliguri', sans-serif; --font-en: 'Orbitron', sans-serif; }
         body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-bn); padding-bottom: 100px; }
 
-        /* 📢 Top Greeting Banner */
-        .top-banner { background: #fff; color: #000; padding: 15px; margin: 15px; border-radius: 15px; display: flex; align-items: center; gap: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+        /* 📢 Clickable Top Greeting Banner */
+        .top-banner-link { text-decoration: none; color: inherit; display: block; }
+        .top-banner { background: #fff; color: #000; padding: 15px; margin: 15px; border-radius: 15px; display: flex; align-items: center; gap: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: 0.3s; }
+        .top-banner:active { transform: scale(0.97); background: #f0f0f0; }
         .wa-icon-circle { background: #25d366; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; }
         .banner-text b { display: block; font-size: 15px; color: #111; }
         .banner-text span { font-size: 12px; opacity: 0.8; }
@@ -35,27 +37,28 @@
         .service-card i { font-size: 30px; margin-bottom: 12px; display: block; }
         .service-card b { font-size: 10px; color: #fff; display: block; text-transform: uppercase; line-height: 1.4; }
 
-        /* 📞 Contact Support Cards */
+        /* 📞 Contact Cards */
         .contact-card { display: flex; align-items: center; gap: 15px; background: #fff; color: #333; padding: 15px 20px; border-radius: 15px; text-decoration: none; margin-bottom: 12px; border: 1px solid #eee; transition: 0.3s; }
-        .contact-card:active { transform: scale(0.98); background: #f9f9f9; }
         .contact-card i { font-size: 28px; width: 35px; text-align: center; }
         .contact-text b { display: block; font-size: 16px; color: #111; }
         .contact-text span { font-size: 12px; opacity: 0.7; }
 
-        /* 💳 Payment Section */
+        /* 💳 Payment System */
         .payment-card { background: linear-gradient(135deg, rgba(0, 255, 204, 0.1) 0%, rgba(0, 0, 0, 0) 100%); border: 1px dashed var(--primary); padding: 20px; border-radius: 15px; text-align: center; margin-top: 10px; }
         .pay-num { font-size: 22px; font-weight: 800; color: #fff; margin-top: 8px; display: block; font-family: var(--font-en); }
     </style>
 </head>
 <body>
 
-    <div class="top-banner">
-        <div class="wa-icon-circle"><i class="fab fa-whatsapp"></i></div>
-        <div class="banner-text">
-            <b>আসসালামু আলাইকুম!</b>
-            <span>যেকোনো প্রয়োজনে আমাদের হোয়াটসঅ্যাপে মেসেজ দিন।</span>
+    <a href="https://wa.me/8801751416755?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%20%E0%A6%A8%E0%A7%8B%E0%A6%AC%E0%A6%BE%E0%A6%AC%20%E0%A6%B8%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0%2C%20%E0%A6%86%E0%A6%AA%E0%A6%A8%E0%A6%BE%E0%A6%B0%20%E0%A6%B8%E0%A6%BE%E0%A6%A5%E0%A7%87%20%E0%A6%95%E0%A6%BF%E0%A6%9B%E0%A7%81%20%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%9F%E0%A7%8B%E0%A6%9C%E0%A6%A8%E0%A7%87%20%E0%A6%9C%E0%A7%8B%E0%A6%97%E0%A6%BE%E0%A6%9C%E0%A7%8B%E0%A6%97%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A7%81%E0%A7%A4" class="top-banner-link">
+        <div class="top-banner">
+            <div class="wa-icon-circle"><i class="fab fa-whatsapp"></i></div>
+            <div class="banner-text">
+                <b>আসসালামু আলাইকুম!</b>
+                <span>যেকোনো প্রয়োজনে আমাদের হোয়াটসঅ্যাপে মেসেজ দিন।</span>
+            </div>
         </div>
-    </div>
+    </a>
 
     <header>
         <span class="badge">🚀 PROFILE ACTIVATED</span>
@@ -93,34 +96,11 @@
             <div class="contact-text"><b>WhatsApp</b><span>Talk to us live</span></div>
         </a>
 
-        <a href="https://wa.me/8801751416755" class="contact-card">
-            <i class="fab fa-telegram" style="color:#0088cc;"></i>
-            <div class="contact-text"><b>Telegram</b><span>Join our community</span></div>
-        </a>
-
-        <a href="mailto:secure.technology.solutions.bd@gmail.com" class="contact-card">
-            <i class="fas fa-envelope" style="color:#ea4335;"></i>
-            <div class="contact-text"><b>Email</b><span>Mail us</span></div>
-        </a>
-
-        <div class="section-box">
-            <h3>🔐 আমাদের সকল সার্ভিস :</h3>
-            <div class="list-item"><b>1️⃣</b> একাউন্ট রিকভারি সার্ভিস</div>
-            <div class="list-item"><b>2️⃣</b> একাউন্ট অ্যাক্সেস পুনরুদ্ধার</div>
-            <div class="list-item"><b>3️⃣</b> সোশ্যাল মিডিয়া একাউন্ট রিকভারি</div>
-            <div class="list-item"><b>4️⃣</b> ডিজিটাল একাউন্ট রিকভারি সলিউশন</div>
-            <div class="list-item"><b>5️⃣</b> অনলাইন একাউন্ট অ্যাক্সেস রিস্টোরেশন</div>
-            <div class="list-item"><b>6️⃣</b> একাউন্ট আনলক ও রিকভারি সার্ভিস</div>
-            <div class="list-item"><b>7️⃣</b> সোশ্যাল মিডিয়া একাউন্ট সাপোর্ট সার্ভিস</div>
-            <div class="list-item"><b>8️⃣</b> একাউন্ট সিকিউরিটি ও রিকভারি সহায়তা</div>
-        </div>
-
-        <div class="section-box" style="border-left-color: #ff3b30;">
+        <div class="section-box" style="border-left-color: #ff3b30; margin-top: 30px;">
             <h3 style="color: #ff3b30;"><i class="fas fa-shield-virus"></i> এক্সপার্ট সিকিউরিটি ও রিমুভাল সার্ভিস</h3>
             <div class="list-item"><i class="fas fa-fire" style="color: #ff3b30;"></i> হ্যারেজমেন্ট একাউন্ট রিমুভ</div>
             <div class="list-item"><i class="fas fa-shield-alt"></i> ফেসবুক অ্যাকাউন্ট অ্যাক্সেস ও রিকভারি</div>
             <div class="list-item"><i class="fas fa-shield-alt"></i> জিমেইল অ্যাকাউন্ট অ্যাক্সেস ও রিকভারি</div>
-            <div class="list-item"><i class="fas fa-shield-alt"></i> ইমো অ্যাকাউন্ট অ্যাক্সেস ও রিকভারি</div>
         </div>
 
         <div class="payment-card">
@@ -131,8 +111,7 @@
 
         <div class="footer-note" style="background:#111; border:1px solid #222; padding:20px; border-radius:15px; margin-top:35px; font-size:13px; color:#9ca3af; text-align:center;">
             ⭐ <b>Secure Technology Experts</b><br>
-            ✔️ প্রফেশনাল সাপোর্ট | ✔️ বিশ্বস্ত ডিজিটাল সার্ভিস<br>
-            ✔️ দ্রুত এবং নিরাপদ সমাধান
+            ✔️ প্রফেশনাল সাপোর্ট | ✔️ বিশ্বস্ত ডিজিটাল সার্ভিস
         </div>
     </div>
 
@@ -143,7 +122,6 @@
     <script>
         function order(service) {
             const phone = "8801751416755";
-            // 📝 Full Bangla Format
             const msg = `আসসালামু আলাইকুম,\nআমি আপনার ${service} রিকভারি সার্ভিসটি নিতে চাই। দয়া করে প্রসেসটি জানান।`;
             window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
         }
